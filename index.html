@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalles del Proyecto | Framework de Hardening</title>
+    <title>Mi Portafolio de Ciberseguridad | Emmanuel Galeana</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
@@ -15,56 +15,102 @@
     <header>
         <div class="container">
             <nav>
-                <a href="index.html" class="logo">yagel</a>
+                <a href="#" class="logo">yagel</a>
                 <div class="nav-links">
-                    <a href="index.html" style="font-weight: bold;">&larr; Volver al Portafolio</a>
+                    <a href="#proyectos">Proyectos</a>
+                    <!-- CORRECCIÓN: Ahora lleva directo a la página de certificaciones -->
+                    <a href="certificaciones.html">Certificaciones</a>
+                    <a href="#contacto">Contacto</a>
                 </div>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="hero" style="padding-bottom: 2rem;">
+        <section class="hero">
             <div class="container">
-                <h1>Automatización de <span>Hardening</span></h1>
-                <p>Auditoría híbrida de seguridad y remediación de infraestructura en entornos virtualizados Debian Linux.</p>
+                <h1>Hola, soy <span>Emmanuel</span></h1>
+                <p>Ingeniero en Ciencias de la Computación enfocado en la arquitectura de ciberseguridad, análisis de vulnerabilidades y automatización de infraestructura.</p>
             </div>
         </section>
 
-        <section class="proyectos">
+        <section id="proyectos" class="proyectos">
             <div class="container">
-                <div class="proyecto-card" style="text-align: left; max-width: 800px; margin: 0 auto; padding: 3rem;">
+                <h2>Proyectos y Habilidades</h2>
+                <div class="proyectos-grid">
                     
-                    <h2 style="font-size: 1.8rem; margin-bottom: 1rem;">Descripción del Proyecto</h2>
-                    <p style="color: var(--text-color-secondary); margin-bottom: 1.5rem; line-height: 1.8;">
-                        Este proyecto consiste en el diseño y desarrollo de un framework modular escrito en <strong>Bash</strong> para la automatización del endurecimiento (hardening) de servidores Linux. Nace como respuesta a una auditoría híbrida de ciberseguridad realizada con <strong>OpenVAS (Caja Negra)</strong> y <strong>Lynis (Caja Blanca)</strong>, logrando mitigar el 100% de las vulnerabilidades lógicas detectadas[cite: 15, 18, 19].
-                    </p>
+                    <div class="proyecto-card">
+                        <h3>Framework de Hardening y Auditoría</h3>
+                        <p>Desarrollo de un orquestador automatizado en Bash para asegurar servidores Debian. Mitigación del 100% de vulnerabilidades lógicas detectadas.</p>
+                        <div class="tags">
+                            <span class="tag">Bash Scripting</span>
+                            <span class="tag">OpenVAS / Lynis</span>
+                            <span class="tag">Ciberseguridad</span>
+                        </div>
+                        <a href="proyecto-hardening.html">Ver Detalles del Proyecto</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                    <h3 style="margin-top: 2.5rem; margin-bottom: 1rem; color: var(--primary-color);">Archivos y Documentación</h3>
-                    <p style="color: var(--text-color-secondary); font-size: 0.95rem; margin-bottom: 1rem;">
-                        Haz clic en los enlaces a continuación para descargar o visualizar los reportes técnicos y diagramas arquitectónicos generados para este proyecto:
-                    </p>
+        <!-- SECCIÓN DE CERTIFICACIONES CON ENLACES CORREGIDOS -->
+        <section id="certificaciones-preview" class="proyectos">
+            <div class="container">
+                <h2>Certificaciones y Reconocimientos</h2>
+                <div class="proyectos-grid">
                     
-                    <ul style="list-style: none; padding: 0;">
-                        <li style="margin-bottom: 1rem;">
-                             <a href="Reporte_Academico_Hardening.pdf" target="_blank" style="color: var(--text-color-primary); text-decoration: underline; font-weight: 500;">Ver Reporte Técnico Oficial (PDF)</a>
-                        </li>
-                        <li style="margin-bottom: 1rem;">
-                             <a href="Anexo_Diagramas_Arquitectura.pdf" target="_blank" style="color: var(--text-color-primary); text-decoration: underline; font-weight: 500;">Ver Anexo de Diagramas y Flujos Lógicos (PDF)</a>
-                        </li>
-                    </ul>
-
-                    <h3 style="margin-top: 2.5rem; margin-bottom: 1rem; color: var(--primary-color);">Repositorio Oficial</h3>
-                    <p style="color: var(--text-color-secondary); margin-bottom: 1.5rem; line-height: 1.8;">
-                        El código fuente de los scripts (la versión lineal y el orquestador modular), junto con las instrucciones técnicas de implementación, se encuentra alojado de forma pública en GitHub para su revisión[cite: 17].
-                    </p>
-                    
-                    <div style="margin-top: 2.5rem; text-align: center;">
-                        <a href="https://github.com/Yagel-ls/Linux-Hardening-Hybrid-Audit-Framework" target="_blank" style="display: inline-block; padding: 12px 25px; background-color: var(--primary-color); color: var(--bg-color); text-decoration: none; font-weight: bold; border-radius: 5px; transition: opacity 0.3s;">
-                            Ver Código en GitHub
-                        </a>
+                    <div class="proyecto-card">
+                        <h3>Introducción a la Ciberseguridad</h3>
+                        <p>Cisco Networking Academy</p>
+                        <div class="tags">
+                            <span class="tag">Cisco</span>
+                            <span class="tag">Junio 2023</span>
+                        </div>
+                        <a href="certificaciones.html#cisco-ciberseguridad">Ver Certificado</a>
                     </div>
 
+                    <div class="proyecto-card">
+                        <h3>Ciberseguridad y Hacking Ético</h3>
+                        <p>BIG School - Técnicas de detección de vulnerabilidades y defensa digital.</p>
+                        <div class="tags">
+                            <span class="tag">Hacking Ético</span>
+                            <span class="tag">Julio 2026</span>
+                        </div>
+                        <a href="certificaciones.html#big-school">Ver Certificado</a>
+                    </div>
+
+                    <div class="proyecto-card">
+                        <h3>Desarrollo en Java</h3>
+                        <p>SoloLearn - Comprensión teórica y práctica de Java.</p>
+                        <div class="tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Julio 2023</span>
+                        </div>
+                        <a href="certificaciones.html#sololearn-java">Ver Certificados</a>
+                    </div>
+                    
+                    <div class="proyecto-card">
+                        <h3>Hackatón ARPA 2025</h3>
+                        <p>BUAP - Escuela de Artes Plásticas y Audiovisuales.</p>
+                        <div class="tags">
+                            <span class="tag">Hackatón</span>
+                            <span class="tag">Junio 2024</span>
+                        </div>
+                        <a href="certificaciones.html#hackaton-arpa">Ver Reconocimiento</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contacto">
+            <div class="container">
+                <h2>Contáctame</h2>
+                <p>Estoy disponible para colaborar en proyectos de seguridad informática y administración de infraestructura TI. Envíame un mensaje o conéctate conmigo.</p>
+                <div class="contacto-links">
+                    <a href="#">Email</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="https://github.com/Yagel-ls" target="_blank">GitHub</a>
                 </div>
             </div>
         </section>
