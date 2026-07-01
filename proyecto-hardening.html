@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Proyecto | Framework de Hardening</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+    <canvas id="three-canvas"></canvas>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">yagel</a>
+                <div class="nav-links">
+                    <a href="index.html" style="font-weight: bold;">&larr; Volver al Portafolio</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" style="padding-bottom: 2rem;">
+            <div class="container">
+                <h1>Automatización de <span>Hardening</span></h1>
+                <p>Auditoría híbrida de seguridad y remediación de infraestructura en entornos virtualizados Debian Linux.</p>
+            </div>
+        </section>
+
+        <section class="proyectos">
+            <div class="container">
+                <div class="proyecto-card" style="text-align: left; max-width: 800px; margin: 0 auto; padding: 3rem;">
+                    
+                    <h2 style="font-size: 1.8rem; margin-bottom: 1rem;">Descripción del Proyecto</h2>
+                    <p style="color: var(--text-color-secondary); margin-bottom: 1.5rem; line-height: 1.8;">
+                        Este proyecto consiste en el diseño y desarrollo de un framework modular escrito en <strong>Bash</strong> para la automatización del endurecimiento (hardening) de servidores Linux. Nace como respuesta a una auditoría híbrida de ciberseguridad realizada con <strong>OpenVAS (Caja Negra)</strong> y <strong>Lynis (Caja Blanca)</strong>, logrando mitigar el 100% de las vulnerabilidades lógicas detectadas.
+                    </p>
+
+                    <h3 style="margin-top: 2.5rem; margin-bottom: 1rem; color: var(--primary-color);">Archivos y Documentación</h3>
+                    <p style="color: var(--text-color-secondary); font-size: 0.95rem; margin-bottom: 1rem;">
+                        Haz clic en los enlaces a continuación para descargar o visualizar los reportes técnicos y diagramas arquitectónicos generados para este proyecto:
+                    </p>
+                    
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 1rem;">
+                            📄 <a href="Reporte_Academico_Hardening.pdf" target="_blank" style="color: var(--text-color-primary); text-decoration: underline; font-weight: 500;">Ver Reporte Técnico Oficial (PDF)</a>
+                        </li>
+                        <li style="margin-bottom: 1rem;">
+                            📊 <a href="Anexo_Diagramas_Arquitectura.pdf" target="_blank" style="color: var(--text-color-primary); text-decoration: underline; font-weight: 500;">Ver Anexo de Diagramas y Flujos Lógicos (PDF)</a>
+                        </li>
+                    </ul>
+
+                    <h3 style="margin-top: 2.5rem; margin-bottom: 1rem; color: var(--primary-color);">Repositorio Oficial</h3>
+                    <p style="color: var(--text-color-secondary); margin-bottom: 1.5rem; line-height: 1.8;">
+                        El código fuente de los scripts (la versión lineal y el orquestador modular), junto con las instrucciones técnicas de implementación, se encuentra alojado de forma pública en GitHub para su revisión.
+                    </p>
+                    
+                    <div style="margin-top: 2.5rem; text-align: center;">
+                        <a href="https://github.com/Yagel-ls/hardening-framwork" target="_blank" style="display: inline-block; padding: 12px 25px; background-color: var(--primary-color); color: var(--bg-color); text-decoration: none; font-weight: bold; border-radius: 5px; transition: opacity 0.3s;">
+                            Ver Código en GitHub
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026. Emmanuel Galeana Letras - BUAP.</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
