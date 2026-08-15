@@ -3,25 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio de Ciberseguridad | Emmanuel Galeana</title>
+    <title>CV | Emmanuel Galeana Letras</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
 <body>
-
     <canvas id="three-canvas"></canvas>
-
-    <header>
+    
+    <header class="no-print">
         <div class="container">
             <nav>
                 <a href="#" class="logo">yagel</a>
                 <div class="nav-links">
-                    <a href="#proyectos">Proyectos</a>
-                    <a href="certificaciones.html">Certificaciones</a>
-                    <!-- Nuevo enlace en el menú de navegación -->
-                    <a href="cv.html" style="color: var(--primary-color);">Currículum Vitae</a>
-                    <a href="#contacto">Contacto</a>
+                    <a href="#experiencia">Experiencia</a>
+                    <a href="#educacion">Educación</a>
+                    <a href="#skills">Habilidades</a>
+                    <a href="#" onclick="window.print(); return false;" class="btn-print">Imprimir PDF</a>
                 </div>
             </nav>
         </div>
@@ -29,112 +27,90 @@
 
     <main>
         <section class="hero">
-            <div class="container">
-                <h1>Hola, soy <span>Emmanuel</span></h1>
-                <p>Ingeniero en Ciencias de la Computación enfocado en la arquitectura de ciberseguridad, análisis de vulnerabilidades y automatización de infraestructura.</p>
-            </div>
-        </section>
-
-        <section id="proyectos" class="proyectos">
-            <div class="container">
-                <h2>Proyectos y Habilidades</h2>
-                <div class="proyectos-grid">
-                    
-                    <div class="proyecto-card">
-                        <h3>Framework de Hardening y Auditoría</h3>
-                        <p>Desarrollo de un orquestador automatizado en Bash para asegurar servidores Debian. Mitigación del 100% de vulnerabilidades lógicas detectadas.</p>
-                        <div class="tags">
-                            <span class="tag">Bash Scripting</span>
-                            <span class="tag">OpenVAS / Lynis</span>
-                            <span class="tag">Ciberseguridad</span>
-                        </div>
-                        <a href="proyecto-hardening.html">Ver Detalles del Proyecto</a>
-                    </div>
-                    
-                    <!-- NUEVA TARJETA AÑADIDA PARA EL CV -->
-                    <div class="proyecto-card" style="border-color: var(--primary-color);">
-                        <h3>Currículum: Soporte Técnico IT</h3>
-                        <p>Perfil profesional enfocado en el diagnóstico, reparación y mantenimiento a nivel hardware y software de computadoras y dispositivos móviles.</p>
-                        <div class="tags">
-                            <span class="tag">Reparación de Hardware</span>
-                            <span class="tag">Micro-soldadura</span>
-                            <span class="tag">Sistemas Operativos</span>
-                        </div>
-                        <a href="cv.html">Ver Currículum Interactivo</a>
-                    </div>
-
+            <div class="container hero-content">
+                <div class="profile-pic">
+                    <!-- Reemplaza "foto-perfil.jpg" con el nombre de tu foto real -->
+                    <img src="foto-perfil.jpg" alt="Foto de Perfil" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'><circle cx=\'50\' cy=\'50\' r=\'50\' fill=\'%231a1a2e\'/><text x=\'50\' y=\'55\' font-family=\'Arial\' font-size=\'14\' fill=\'%2300ff66\' text-anchor=\'middle\'>Foto</text></svg>'">
+                </div>
+                
+                <div class="hero-text">
+                    <h1><span>Emmanuel</span> Galeana Letras</h1>
+                    <h2>Técnico Especialista en Reparación de Hardware y Software</h2>
+                    <p class="contact-info">Puebla, Puebla | 249-128-7870 | manegupi2002@gmail.com</p>
+                </div>
+                
+                <div class="profile-box">
+                    <p>Técnico en Soporte y Mantenimiento de Equipo de Cómputo con experiencia práctica desde 2021, enfocado de lleno en el servicio técnico desde mayo de 2025. Combino mis estudios en Ciencias de la Computación con el trabajo constante de campo en diagnóstico, reparación y mantenimiento a equipos de cómputo y celulares. Me caracterizo por ser una persona responsable, con buena atención al detalle en el manejo y reemplazo de componentes electrónicos. Trabajo de forma metódica para solucionar problemas de hardware y software, buscando siempre realizar un trabajo bien hecho, con enfoque en la calidad y en entregar equipos totalmente funcionales a los clientes.</p>
                 </div>
             </div>
         </section>
 
-        <section id="certificaciones-preview" class="proyectos">
+        <section id="experiencia" class="seccion-cv">
             <div class="container">
-                <h2>Certificaciones y Reconocimientos</h2>
-                <div class="proyectos-grid">
-                    
-                    <div class="proyecto-card">
-                        <h3>Introducción a la Ciberseguridad</h3>
-                        <p>Cisco Networking Academy</p>
-                        <div class="tags">
-                            <span class="tag">Cisco</span>
-                            <span class="tag">Junio 2023</span>
-                        </div>
-                        <a href="certificaciones.html#cisco-ciberseguridad">Ver Certificado</a>
+                <h2 class="section-title">Experiencia Profesional</h2>
+                <div class="card-grid">
+                    <div class="cv-card full-width">
+                        <h3>Técnico Especialista en Reparación y Soporte IT</h3>
+                        <p class="meta"><strong>Griswally / Reparacel</strong> | Puebla, Puebla | <em>2021 – Presente (Inmersión total desde Mayo 2025)</em></p>
+                        <ul class="task-list">
+                            <li><strong>Diagnóstico y Mantenimiento de Hardware:</strong> Ejecución de mantenimiento preventivo y correctivo a equipos de cómputo y smartphones. Especialista en la sustitución de pantallas LCD, baterías, módulos de cámara y cables flex para marcas líderes del mercado.</li>
+                            <li><strong>Reemplazo de Componentes y Soldadura Básica:</strong> Uso de cautín y estaciones de trabajo para la extracción e instalación segura de componentes de montaje como centros de carga, botones y conectores periféricos, sin comprometer la integridad de las placas.</li>
+                            <li><strong>Gestión de Software y Firmware:</strong> Instalación de sistemas operativos, drivers y paquetería de software. Manejo fluido de flasheo de ROMs, recuperación básica de información y operación de software especializado de diagnóstico (incluyendo AMT Unlock Tool y TSM Pro Tool).</li>
+                            <li><strong>Atención al Cliente y Gestión de Servicios:</strong> Trato directo con usuarios para el diagnóstico inicial, elaboración de presupuestos transparentes, actualización del estatus de reparación en sistema y entrega del equipo funcional.</li>
+                        </ul>
                     </div>
-
-                    <div class="proyecto-card">
-                        <h3>Ciberseguridad y Hacking Ético</h3>
-                        <p>BIG School - Técnicas de detección de vulnerabilidades y defensa digital.</p>
-                        <div class="tags">
-                            <span class="tag">Hacking Ético</span>
-                            <span class="tag">Julio 2026</span>
-                        </div>
-                        <a href="certificaciones.html#big-school">Ver Certificado</a>
-                    </div>
-
-                    <div class="proyecto-card">
-                        <h3>Desarrollo en Java</h3>
-                        <p>SoloLearn - Comprensión teórica y práctica de Java.</p>
-                        <div class="tags">
-                            <span class="tag">Java</span>
-                            <span class="tag">Julio 2023</span>
-                        </div>
-                        <a href="certificaciones.html#sololearn-java">Ver Certificados</a>
-                    </div>
-                    
-                    <div class="proyecto-card">
-                        <h3>Hackatón ARPA 2025</h3>
-                        <p>BUAP - Escuela de Artes Plásticas y Audiovisuales.</p>
-                        <div class="tags">
-                            <span class="tag">Hackatón</span>
-                            <span class="tag">Junio 2024</span>
-                        </div>
-                        <a href="certificaciones.html#hackaton-arpa">Ver Reconocimiento</a>
-                    </div>
-
                 </div>
             </div>
         </section>
 
-        <section id="contacto" class="contacto">
+        <section id="educacion" class="seccion-cv">
             <div class="container">
-                <h2>Contáctame</h2>
-                <p>Estoy disponible para colaborar en proyectos de seguridad informática y administración de infraestructura TI. Envíame un mensaje o conéctate conmigo.</p>
-                <div class="contacto-links">
-                    <a href="mailto:manegupi2002@gmail.com">Email</a>
-                    <a href="#">LinkedIn</a>
-                    <a href="https://github.com/Yagel-ls" target="_blank">GitHub</a>
+                <h2 class="section-title">Educación y Certificaciones</h2>
+                <div class="card-grid">
+                    <div class="cv-card">
+                        <h3>Licenciatura en Ciencias de la Computación</h3>
+                        <p class="meta"><strong>BUAP</strong> | En curso</p>
+                        <p>Enfoque: Desarrollo de habilidades analíticas, arquitectura de computadoras y resolución lógica de problemas.</p>
+                    </div>
+                    <div class="cv-card">
+                        <h3>Técnico en Soporte y Mantenimiento de Equipo de Cómputo</h3>
+                        <p class="meta"><strong>CECyTE Puebla Plantel Tecamachalco</strong> | Ago 2018 - Jul 2021 | <em>Promedio: 8.6</em></p>
+                        <ul class="task-list">
+                            <li>Ensamble y configuración de equipos de cómputo según requerimientos del fabricante.</li>
+                            <li>Mantenimiento preventivo, correctivo y seguridad informática de equipos y software.</li>
+                            <li>Soporte técnico especializado de forma presencial y a distancia.</li>
+                            <li>Diseño, instalación y administración de redes LAN cumpliendo estándares oficiales.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="seccion-cv">
+            <div class="container">
+                <h2 class="section-title">Skills Técnicas y Herramientas</h2>
+                <div class="tags-container">
+                    <span class="tag">Mantenimiento a equipos de cómputo</span>
+                    <span class="tag">Instalación de Sistemas Operativos y Drivers</span>
+                    <span class="tag">Adaptabilidad tecnológica rápida</span>
+                    <span class="tag">Precisión manual</span>
+                    <span class="tag">Desensamble profesional seguro</span>
+                    <span class="tag">Reemplazo de periféricos</span>
+                    <span class="tag">Mantenimiento térmico</span>
+                    <span class="tag">Multímetro digital</span>
+                    <span class="tag">Cautín y Estaciones de trabajo</span>
+                    <span class="tag">Windows / Linux / Android / iOS</span>
+                    <span class="tag">Flasheo de ROMs</span>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="no-print">
         <div class="container">
-            <p>&copy; 2026. Emmanuel Galeana Letras - BUAP.</p>
+            <p>&copy; 2026. Emmanuel Galeana Letras - CV Interactivo.</p>
         </div>
     </footer>
-
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
 </body>
 </html>
