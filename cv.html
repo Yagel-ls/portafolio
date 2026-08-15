@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio de Ciberseguridad | Emmanuel Galeana</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+    <canvas id="three-canvas"></canvas>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">yagel</a>
+                <div class="nav-links">
+                    <a href="#proyectos">Proyectos</a>
+                    <a href="certificaciones.html">Certificaciones</a>
+                    <!-- Nuevo enlace en el menú de navegación -->
+                    <a href="cv.html" style="color: var(--primary-color);">Currículum Vitae</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Hola, soy <span>Emmanuel</span></h1>
+                <p>Ingeniero en Ciencias de la Computación enfocado en la arquitectura de ciberseguridad, análisis de vulnerabilidades y automatización de infraestructura.</p>
+            </div>
+        </section>
+
+        <section id="proyectos" class="proyectos">
+            <div class="container">
+                <h2>Proyectos y Habilidades</h2>
+                <div class="proyectos-grid">
+                    
+                    <div class="proyecto-card">
+                        <h3>Framework de Hardening y Auditoría</h3>
+                        <p>Desarrollo de un orquestador automatizado en Bash para asegurar servidores Debian. Mitigación del 100% de vulnerabilidades lógicas detectadas.</p>
+                        <div class="tags">
+                            <span class="tag">Bash Scripting</span>
+                            <span class="tag">OpenVAS / Lynis</span>
+                            <span class="tag">Ciberseguridad</span>
+                        </div>
+                        <a href="proyecto-hardening.html">Ver Detalles del Proyecto</a>
+                    </div>
+                    
+                    <!-- NUEVA TARJETA AÑADIDA PARA EL CV -->
+                    <div class="proyecto-card" style="border-color: var(--primary-color);">
+                        <h3>Currículum: Soporte Técnico IT</h3>
+                        <p>Perfil profesional enfocado en el diagnóstico, reparación y mantenimiento a nivel hardware y software de computadoras y dispositivos móviles.</p>
+                        <div class="tags">
+                            <span class="tag">Reparación de Hardware</span>
+                            <span class="tag">Micro-soldadura</span>
+                            <span class="tag">Sistemas Operativos</span>
+                        </div>
+                        <a href="cv.html">Ver Currículum Interactivo</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="certificaciones-preview" class="proyectos">
+            <div class="container">
+                <h2>Certificaciones y Reconocimientos</h2>
+                <div class="proyectos-grid">
+                    
+                    <div class="proyecto-card">
+                        <h3>Introducción a la Ciberseguridad</h3>
+                        <p>Cisco Networking Academy</p>
+                        <div class="tags">
+                            <span class="tag">Cisco</span>
+                            <span class="tag">Junio 2023</span>
+                        </div>
+                        <a href="certificaciones.html#cisco-ciberseguridad">Ver Certificado</a>
+                    </div>
+
+                    <div class="proyecto-card">
+                        <h3>Ciberseguridad y Hacking Ético</h3>
+                        <p>BIG School - Técnicas de detección de vulnerabilidades y defensa digital.</p>
+                        <div class="tags">
+                            <span class="tag">Hacking Ético</span>
+                            <span class="tag">Julio 2026</span>
+                        </div>
+                        <a href="certificaciones.html#big-school">Ver Certificado</a>
+                    </div>
+
+                    <div class="proyecto-card">
+                        <h3>Desarrollo en Java</h3>
+                        <p>SoloLearn - Comprensión teórica y práctica de Java.</p>
+                        <div class="tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Julio 2023</span>
+                        </div>
+                        <a href="certificaciones.html#sololearn-java">Ver Certificados</a>
+                    </div>
+                    
+                    <div class="proyecto-card">
+                        <h3>Hackatón ARPA 2025</h3>
+                        <p>BUAP - Escuela de Artes Plásticas y Audiovisuales.</p>
+                        <div class="tags">
+                            <span class="tag">Hackatón</span>
+                            <span class="tag">Junio 2024</span>
+                        </div>
+                        <a href="certificaciones.html#hackaton-arpa">Ver Reconocimiento</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contacto">
+            <div class="container">
+                <h2>Contáctame</h2>
+                <p>Estoy disponible para colaborar en proyectos de seguridad informática y administración de infraestructura TI. Envíame un mensaje o conéctate conmigo.</p>
+                <div class="contacto-links">
+                    <a href="mailto:manegupi2002@gmail.com">Email</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="https://github.com/Yagel-ls" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026. Emmanuel Galeana Letras - BUAP.</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
